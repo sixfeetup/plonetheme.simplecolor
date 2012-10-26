@@ -1,0 +1,89 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="plonetheme.simplecolor">
+
+  <!-- 'Simplecolor' Zope 3 browser layer
+    Register views, viewlets and resources for this layer to make sure
+    they only apply to the 'Simplecolor' theme.
+    You can also use this layer to override default Plone browser views
+    and viewlets only within the 'Simplecolor' theme.
+  -->
+  <interface
+      interface=".interfaces.IThemeSpecific"
+      type="zope.publisher.interfaces.browser.IBrowserSkinType"
+      name="Simplecolor"
+      />
+      
+   <!-- Zope 3 browser resources -->
+
+   <!-- Resource directory for images-->
+  <browser:resourceDirectory
+      name="plonetheme.simplecolor.images"
+      directory="images"
+      layer=".interfaces.IThemeSpecific"
+      />
+
+   <!-- Resource directory for stylesheets -->
+  <browser:resourceDirectory
+      name="plonetheme.simplecolor.stylesheets"
+      directory="stylesheets"
+      layer=".interfaces.IThemeSpecific"
+      />
+      
+  <!-- Resource directory for templates -->
+    <browser:resourceDirectory
+        name="plonetheme.simplecolor.templates"
+        directory="templates"
+        layer=".interfaces.IThemeSpecific"
+        />
+
+<!-- Viewlets registration -->
+
+	 <browser:viewlet
+    	name="plonetheme.simplecolor.logo"
+    	manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+    	class="plone.app.layout.viewlets.common.LogoViewlet"
+    	template="templates/logo.pt"
+    	layer=".interfaces.IThemeSpecific"
+    	permission="zope2.View"
+    	/>
+    	
+    	
+    <!-- The customized footer -->
+    <browser:viewlet
+    	name="plonetheme.simplecolor.footer"
+    	manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+    	class="plone.app.layout.viewlets.common.LogoViewlet"
+    	template="templates/footer.pt"
+    	layer=".interfaces.IThemeSpecific"
+    	permission="zope2.View"
+    	/>
+    	
+    <!-- The customized documentactions -->
+    	<browser:viewlet
+    	name="plonetheme.simplecolor.documentactions"
+    	manager="plone.app.layout.viewlets.interfaces.IBelowContent"
+    	class=".viewlets.DocumentActionsNewWindow"
+    	layer=".interfaces.IThemeSpecific"
+    	permission="zope2.View"
+    	/> 
+    	
+     <!--CUSTOMIZATION FOR NAVIGATION PORTLET-->
+    <include package="plone.app.portlets" />
+    <plone:portletRenderer
+     portlet="plone.app.portlets.portlets.navigation.INavigationPortlet"
+     layer=".interfaces.IThemeSpecific"
+     template="templates/navigation.pt"
+    />
+    
+      <!--CUSTOMIZATION FOR LESSONPAGE TEMPLATE PREVIOUSNEXT-->
+    <browser:viewlet  
+    name="plonetheme.simplecolor.nextprevious"   manager="plone.app.layout.viewlets.interfaces.IBelowContentTitle"
+    class=".viewlets.OutreachNextPreviousViewlet"
+    permission="zope2.View" 
+    layer=".interfaces.IThemeSpecific"
+    />  
+
+</configure>

@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<object name="portal_actions" meta_type="Plone Actions Tool"
+   xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+ 
+	<object name="document_actions" meta_type="CMF Action Category">
+  		<property name="title"></property>
+ 
+  		<object name="printAll" meta_type="CMF Action" i18n:domain="plone">
+			<property name="title" i18n:translate="">Display all this lesson's pages for printing.</property>
+			<property name="description" i18n:translate=""></property>
+   			<property name="url_expr">string:${globals_view/getCurrentFolderUrl}/print_view</property>
+   			<property name="icon_expr"></property>
+   			<property name="available_expr">python:not globals_view.isPortalOrPortalDefaultPage()</property>
+   			<property name="permissions">
+    			<element value="View"/>
+   			</property>
+  			<property name="visible">True</property>
+   			<property name="showinnewwindow" type="boolean">True</property>
+  		</object>
+  		
+  		<object name="sendto" meta_type="CMF Action" i18n:domain="plone">
+   			<property name="title" i18n:translate="">Send this</property>
+  			<property name="description" i18n:translate=""></property>
+   			<property name="url_expr">string:$object_url/sendto_form</property>
+   			<property name="link_target"></property>
+   			<property name="icon_expr">string:$portal_url/mail_icon.png</property>
+   			<property name="available_expr"></property>
+   			<property name="permissions">
+    			<element value="Allow sendto"/>
+   			</property>
+   			<property name="visible">False</property>
+  		</object>
+ 	</object>
+
+  
+	<object name="site_actions" meta_type="CMF Action Category">
+  		<property name="title"></property>
+  		
+  		<object name="plone_setup" meta_type="CMF Action" i18n:domain="plone">
+   			<property name="title" i18n:translate="">Site Setup</property>
+   			<property name="description" i18n:translate=""></property>
+   			<property
+      name="url_expr">string:${portal_url}/@@overview-controlpanel</property>
+   			<property name="link_target"></property>
+  			<property name="icon_expr"></property>
+   			<property name="available_expr"></property>
+   			<property name="permissions">
+    			<element value="Plone Site Setup: Overview"/>
+   			</property>
+   			<property name="visible">True</property>
+  		</object>
+ 	
+  		
+  		<object name="contact" meta_type="CMF Action" i18n:domain="plone">
+   			<property name="title" i18n:translate="">Contact</property>
+   			<property name="description" i18n:translate=""></property>
+   			<property name="url_expr">string:${portal_url}/contact-info</property>
+   			<property name="icon_expr"></property>
+   			<property name="available_expr"></property>
+   			<property name="permissions">
+    				<element value="View"/>
+   			</property>
+   			<property name="visible">False</property>
+  		</object>
+    	
+    	<object name="login" meta_type="CMF Action" i18n:domain="plone">
+   			<property name="title" i18n:translate="">Log in</property>
+   			<property name="description" i18n:translate=""></property>
+   			<property name="url_expr">string:${portal_url}/login_form</property>
+   			<property name="icon_expr"></property>
+   			<property name="available_expr">python:member is None</property>
+   			<property name="permissions">
+    			<element value="View"/>
+   			</property>
+   			<property name="visible">False</property>
+  		</object>
+  
+  		<object name="logout" meta_type="CMF Action" i18n:domain="plone">
+   			<property name="title" i18n:translate="">Log out</property>
+   			<property name="description" i18n:translate=""></property>
+   			<property name="url_expr">string:${portal_url}/logout</property>
+   			<property name="icon_expr"></property>
+  			<property name="available_expr">python:member is not None</property>
+   			<property name="permissions">
+    			<element value="View"/>
+   			</property>
+   			<property name="visible">False</property>
+  		</object>
+  		
+  		<object name="sitemap" meta_type="CMF Action" i18n:domain="plone">
+   			<property name="title" i18n:translate="">Site Map</property>
+   			<property name="description" i18n:translate=""></property>
+   			<property name="url_expr">string:${globals_view/navigationRootUrl}/sitemap</property>
+   			<property name="icon_expr"></property>
+  			<property name="available_expr">python:member is not None</property>
+   			<property name="permissions">
+    			<element value="View"/>
+   			</property>
+   			<property name="visible">False</property>
+  		</object>
+  		
+  		<object name="plone_setup" meta_type="CMF Action" i18n:domain="plone">
+			<property name="title" i18n:translate="">Site Setup</property>
+   			<property name="description" i18n:translate=""></property>
+  			<property name="url_expr">string:${portal_url}/plone_control_panel</property>
+   			<property name="link_target"></property>
+   			<property name="icon_expr"></property>
+   			<property name="available_expr">python:checkPermission("Delete objects", object)</property>
+   			<property name="permissions">
+    			<element value="Manage portal"/>
+   			</property>
+   			<property name="visible">True</property>
+  		</object>
+  </object>
+  
+ 
+</object>

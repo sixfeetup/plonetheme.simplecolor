@@ -1,0 +1,15 @@
+<div id="titlebox">
+	<div id="psulogo">
+		<a href="http://www.psu.edu" target="_blank"><img src="logo.gif" height="45" width="97" alt="Penn State Home Page"/>
+	</div>
+	
+	<div id="cla">
+		<span id="collegeof">College of the<span><br/>
+		<span id="liberalarts">Liberal Arts</span>
+	</div>
+
+	<div id="headcoursetitle" tal:condition="context/course_title">
+         <h2 tal:content="view/context/course_title">[course title property]</h2>
+         <h3 tal:content="view/context/course_number">[course number property]</h3>
+    </div>  
+</div>

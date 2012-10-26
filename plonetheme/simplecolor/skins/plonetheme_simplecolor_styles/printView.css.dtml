@@ -1,0 +1,64 @@
+/*
+  This file is based on the ploneCustom.css.dtml shipped with Plone.
+  <dtml-with base_properties> (do not remove this)
+  <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either)
+*/
+/***** This stylesheet for the print-friendly content ******/
+body {
+	margin:0;
+	font-family: &dtml-fontFamily;;
+	font-size: small;
+}
+h1 {
+	margin-bottom: 0;
+}
+dl.image-right {
+	float: right;
+	margin-left: 10px;
+}
+#container {
+	width: 800px;
+	padding: 10px;
+}
+span.oneLesson {
+	display: block;
+	width: 800px;
+	border-bottom: 2px black solid;
+	padding: 0 0 10px 0;
+	/*float: left; this causes printing issues in FF*/
+}
+span.content {
+	display: block;
+}
+
+h1, h2 {border-bottom:1px solid #867A68;}
+.beigeboxLeft{float:left;width:35%;background-color:#ECE7D4;color:#4E403A;padding:8px;margin:5px 5px 5px 0px;}
+.beigeboxRight{float:right;width:35%;background-color:#ECE7D4;color:#4E403A;padding:8px;margin:5px 0px 5px 5px;}
+.imageLeft{float:left;background-color:#DEE7EC;color:#000099;padding:8px;margin:5px 5px 5px 0px;}
+.imageRight{float:right;background-color:#DEE7EC;color:#000099;padding:8px;margin:5px 5px 5px 0px;}
+.floatright{float:right;margin-left:6px;}
+.floatleft{float:left;margin-right:6px;}
+.develnotes{color:red;font-size:.9em;}
+
+/*SPECIAL JST060*/
+.clearLeftFloat{clear:left;}
+.definitionboxRight{float:right;width:48%;margin:4px;padding:5px;background-color:#DDE5C9;color:#39001D;text-align:left;}
+.definitionboxLeft{float:left;width:48%;margin:4px;padding:5px;background-color:#DDE5C9;color:#39001D;text-align:left;}
+
+.didyouknowRight{float:right;width:48%;margin:4px;padding:5px;background-color:#F7F8A0;color:#536511;font-family:Verdana, Arial, Helvetica, sans-serif;text-align:left;}
+.didyouknowLeft{float:left;width:48%;margin:4px;padding:5px;background-color:#F7F8A0;color:#536511;font-family:Verdana, Arial, Helvetica, sans-serif;text-align:left;}
+
+.questionboxRight{float:right;width:48%;margin:4px;padding:5px;background-color:#E3DDB5;color:#182008;font-family:Verdana, Arial, Helvetica, sans-serif;text-align:left;}
+.questionboxLeft{float:left;width:48%;margin:4px;padding:5px;background-color:#E3DDB5;color:#182008;font-family:Verdana, Arial, Helvetica, sans-serif;text-align:left;}
+
+.exerciseboxRight{float:right;width:300px;margin:4px;padding:5px;background-color:#C4C1B0;color:#4A2400;font-family:Verdana, Arial, Helvetica, sans-serif;text-align:left;}
+.exerciseboxLeft{float:left;width:300px;margin:4px;padding:5px;background-color:#C4C1B0;color:#4A2400;font-family:Verdana, Arial, Helvetica, sans-serif;text-align:left;}
+
+.moreabout{clear:both;margin:4px;padding:5px;width:*;background-color:#CDC1BF;color:#39001D;text-align:left;}
+
+.imageboxLeft{float:left;text-align:center;padding:5px;margin:4px;background-color:#A0B769;color:#F3F574;}
+.imageboxRight{float:right;text-align:center;padding:5px;margin:4px;background-color:#A0B769;color:#F3F574;}
+
+
+
+/* </dtml-with> */

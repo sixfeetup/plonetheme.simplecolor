@@ -1,0 +1,6 @@
+<div metal:define-macro="portlet">
+    <dl class="portlet-editors">
+        <dt class="portletHeader">Editing Help</dt>
+        <dd class="portletItem"><a href="https://elearning.la.psu.edu/laonline/faculty-resources/plone-cms-help" target="_blank">Plone Tutorials</a></dd>
+    </dl>
+</div>
