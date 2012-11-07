@@ -1,5 +1,24 @@
 jQuery(function($){
 
+$(window).load(function(){
+
+///************SHOW/HIDE NAVIGATION LINKS *************
+
+
+     $('.portletNavigationTree .portletHeader').toggle(
+
+                 function () {         
+                 $("dl.portletNavigationTree dd.portletItem").show();
+                 $("#portal-column-one").css({"background-color":"#FFFFFF"});
+             }, 
+                 function() {          
+                 $("dl.portletNavigationTree dd.portletItem").hide();
+                 $("#portal-column-one").css({"background-color":"#AC5867"});
+                      
+                 }
+       );
+
+
 //*********** SHOW/HIDE QUESTION/ANSWER DIVS ******** 
 //HIDE ANSWER DIVS
 		//$(".answer").hide();
@@ -86,6 +105,6 @@ $(".tooltip-target").hover(
   $(".tooltip-target").ezpz_tooltip();
   
  
-
+});//CLOSE WINDOW LOAD
 
 });//CLOSE DOCUMENT READY

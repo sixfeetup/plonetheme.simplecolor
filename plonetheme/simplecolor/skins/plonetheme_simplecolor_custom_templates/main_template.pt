@@ -69,6 +69,30 @@
 </div>
         </div>
     <div id="portal-columns" class="row">
+    
+    	 <tal:notajax tal:condition="not:ajax_load">
+        <div id="portal-column-one"
+            metal:define-slot="column_one_slot"
+            tal:condition="sl">
+            
+            <metal:portlets define-slot="portlets_one_slot">
+                <tal:block replace="structure provider:plone.leftcolumn" />
+            </metal:portlets>
+        </div>
+
+        <div id="portal-column-two"
+            metal:define-slot="column_two_slot"
+            tal:condition="sr">
+            
+            <metal:portlets define-slot="portlets_two_slot">
+                <tal:block replace="structure provider:plone.rightcolumn" />
+            </metal:portlets>
+        </div>
+        </tal:notajax>
+    
+    
+    
+    
   
         <div id="portal-column-content">
 
@@ -140,25 +164,7 @@
             <div id="viewlet-below-content" tal:content="structure provider:plone.belowcontent" tal:condition="not:ajax_load" />
         </div>
 
-        <tal:notajax tal:condition="not:ajax_load">
-        <div id="portal-column-one"
-            metal:define-slot="column_one_slot"
-            tal:condition="sl">
-            
-            <metal:portlets define-slot="portlets_one_slot">
-                <tal:block replace="structure provider:plone.leftcolumn" />
-            </metal:portlets>
-        </div>
-
-        <div id="portal-column-two"
-            metal:define-slot="column_two_slot"
-            tal:condition="sr">
-            
-            <metal:portlets define-slot="portlets_two_slot">
-                <tal:block replace="structure provider:plone.rightcolumn" />
-            </metal:portlets>
-        </div>
-        </tal:notajax>
+       
     </div>
 
 

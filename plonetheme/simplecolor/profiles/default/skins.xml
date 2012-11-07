@@ -25,6 +25,9 @@
  <object name="plonetheme_simplecolor_styles"
     meta_type="Filesystem Directory View"
     directory="plonetheme.simplecolor:skins/plonetheme_simplecolor_styles"/>
+ <object name="plonejquery"
+    meta_type="Filesystem Directory View"
+    directory="plonetheme.simplecolor:skins/plonejquery"/>
 
  <!-- A skin-path in this file corresponds to a Skin Selection in the
      'Properties' tab of the portal_skins tool, in the ZMI.
@@ -45,6 +48,8 @@
      insert-after="plonetheme_simplecolor_custom_images"/>
   <layer name="plonetheme_simplecolor_styles"
      insert-after="plonetheme_simplecolor_custom_templates"/>
+  <layer name="plonejquery"
+     insert-after="plonetheme_simplecolor_styles"/>
  </skin-path>
 
 </object>
