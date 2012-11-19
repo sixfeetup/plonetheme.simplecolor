@@ -3,12 +3,11 @@
 
 /*SIMPLECOLOR THEME STYLES*/
 body{
-    background-image:url(greenweave.jpg);
+    background-image:url("lightpaperfibers.png");
 }
 
 #visual-portal-wrapper{
     margin:5px 15px 0px 15px;
-    min-width:800px;
     }
 
 #portal-header{
@@ -26,16 +25,14 @@ body{
     background-image:url(oldMain.jpg);
     background-repeat:no-repeat;
     padding:0;
-    margin-bottom:1em;
+    margin-bottom:.8em;
     margin-top:4px;
+    border:solid #004f00;
+    border-width:1px 4px 4px 1px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
     background-color:#F4FCFF;
-    border:1px solid #004f00;
-    -webkit-box-shadow: #004f00 3px 3px 3px;
-    -moz-box-shadow: #004f00 3px 3px 3px; 
-    box-shadow: #004f00 3px 3px 3px;
 }
 
 
@@ -106,18 +103,18 @@ body{
 }
 
 #headcoursetitle{
-    display:inline-block;
+	float:left;
     margin-top:8px;
     text-align:center;
-    width:auto;
-    padding-left:3em;
+    margin-left:2em;
+    padding-bottom:4px;
 }
 
 #headcoursetitle h2{
     font-family:Garamond;
     font-weight:normal;
     line-height:90%;
-    font-size:1.8em;
+    font-size:1.7em;
     color:#004f00;
     margin:0;
     border-bottom:none;
@@ -137,28 +134,20 @@ body{
 }
 
 #portal-breadcrumbs{
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    background-color:transparent;
-    border:none;
+    background-color:#5B82AA;
+    -webkit-border-radius: 8px 8px 0px 0px;
+    -moz-border-radius: 8px 8px 0px 0px;
+    border-radius: 8px 8px 0px 0px;
     padding:4px;
-    font-size: 80%;
+    color:#FFFFFF;
+    font-size: 90%;
     margin-bottom: 0;
     margin-left: 0;
     }
 
-#portal-breadcrumbs{
-    background-color:#5B82AA;
-    border-radius: 10px 10px 0px 0px;
-    font-size: 90%;
-    color:#FFFFFF;
-}
-
 #portal-breadcrumbs a {
     color:#FFF;
 }
-
 
 #portal-columns{
    background-color:transparent;   
@@ -166,17 +155,17 @@ body{
 
 #portal-column-content{
     background-color:#ffffff; 
-    width:80%;
+    width:79%;
     float:right;
     margin:0px 0px 4px 0px;
     padding:0px;
+    border:solid #5B82AA;
+    border-width:1px 4px 4px 1px;
+    border-right-color:#476685;
+    border-bottom-color:#476685;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
-    -webkit-box-shadow: #5B82AA 4px 4px 4px;
-    -moz-box-shadow: #5B82AA 4px 4px 4px; 
-    box-shadow: #5B82AA 4px 4px 4px;
-    border:solid 1px #5B82AA;
 }
 
 #content{
@@ -223,15 +212,14 @@ body{
     width:18%;
     margin:0;
     margin-right:.5em;
-    border:none;
+    border:solid #AC5867;
+    border-width:1px 4px 4px 1px;
+    border-right-color:#8B4753;
+    border-bottom-color:#8B4753;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
-    -webkit-box-shadow: #AC5867 3px 3px 3px;
-    -moz-box-shadow: #AC5867 3px 3px 3px; 
-    box-shadow: #AC5867 3px 3px 3px;
     background-color:#FFFFFF;
-    border:solid 1px #AC5867;
 }
 
 /*NAVIGATION PORTLET STYLES*/
@@ -275,9 +263,9 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 .portletNavigationTree .portletHeader{
     background-color:#AC5867;
     border:none;
-    -webkit-border-radius: 10px 10px 0px 0px;
-    -moz-border-radius: 10px 10px 0px 0px;
-    border-radius: 10px 10px 0px 0px;
+    -webkit-border-radius: 8px 8px 0px 0px;
+    -moz-border-radius: 8px 8px 0px 0px;
+    border-radius: 8px 8px 0px 0px;
     }
 
 #coursetitle{
@@ -317,11 +305,11 @@ dl.portletNavigationTree dd.portletItem{
 
 /*STYLES FOR PREVIOUS-NEXT DIV*/
 .lessonpagelistingBar{
-    width:175px;
+    width:auto;
     float:right;
     border:none;
     background-color:transparent;
-    margin:0px 0px 5px 10px;
+    margin:0px 0px .8em .8em;
     padding:0 5px;
     }
 

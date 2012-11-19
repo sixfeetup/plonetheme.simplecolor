@@ -1,16 +1,72 @@
 /*MOBILE STYLES*/
 
-@media screen and (max-device-width: 480px),(max-width: 480px) {
+@media only screen and  (max-width : 1000px) {
+
+	#portal-top{
+    background-image:none;
+	}
+	#headcoursetitle {
+	margin-left:.9em;
+	}
+	
+	#titlebox{
+	width:100%;
+	margin-bottom:3px;
+	}
+	
+	#portal-siteactions{
+	float:left;
+	margin-left:4px;
+	}
+	
+	#portal-searchbox{
+    clear:none;
+    margin-bottom:2px;
+    }
+
+}/*END WIDTH 1000PX*/
+
+@media only screen and  (max-width : 800px) {
+	#psulogo{
+	margin-left:5px;
+	}
+	#collegeof{
+    font-size:.6em;
+    }
+	#liberalarts{
+    font-size:1.5em;
+    }
+	#headcoursetitle {
+	margin-left:1em;
+	}
+
+	#headcoursetitle h2{
+    display:block;
+    font-size:1.3em;
+    }
+    
+    #portal-column-content{
+    background-color:#ffffff; 
+    width:76%;
+    }
+    
+    #portal-column-one{
+    width:20%;
+    }
+}
+	
+
+
+
+
+@media only screen and  (max-width : 600px) {
 
 #visual-portal-wrapper {
     margin: 5px 15px 0;
-    min-width: auto;
 }
 #portal-top{
     background-image:none;
-    -webkit-box-shadow: #004f00 0px 0px 0px;
-    -moz-box-shadow: #004f00 0px 0px 0px; 
-    box-shadow: #004f00 0px 0px 0px;
+    border-width:1px;
 }
 
 #portal-header{
@@ -41,9 +97,6 @@
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
-    -webkit-box-shadow: #AC5867 0px 0px 0px;
-    -moz-box-shadow: #AC5867 0px 0px 0px; 
-    box-shadow: #AC5867 0px 0px 0px;
     float: none;
     margin: 0 0 1em 0;
     width: 100%;
@@ -65,7 +118,6 @@ dl.portletNavigationTree dd.portletItem {
     background-color: #FFFFFF;
     border: 1px solid #5B82AA;
     border-radius: 10px 10px 10px 10px;
-    box-shadow: 0px 0px 0px 0px;
     float: none;
     margin: 0 0 4px;
     padding: 0;
@@ -81,24 +133,26 @@ dl.portletNavigationTree dd.portletItem {
 }
 
 #headcoursetitle {
+	clear:both;
+	float:none;
     display:block;
-    clear:both;
     margin-top: 5px;
     padding-left:0;
     text-align: center;
-    width: auto;
+    margin-left:0;
     }
 
 #headcoursetitle h2{
     display:block;
+    font-size:1.3em;
 }
 
 #headcoursetitle h3{
-    display:inline;
+    font-size:.6em;
 }
 
 #courseimagetile{
      display:none;
 }
 
-}/*END MOBILE STYLES*/
+}

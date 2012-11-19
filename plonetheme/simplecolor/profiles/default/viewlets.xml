@@ -35,7 +35,7 @@
   </order>
   
     <order manager="plone.portalheader" skinname="Simplecolor">
-    	<viewlet name="plonetheme.simplecolor.logo" />
+    	<viewlet name="plonetheme.simplecolor.logo" insert-before="plone.site_actions"/>
     	<viewlet name="plone.site_actions" insert-before="plone.searchbox"/>
     	<viewlet name="plone.searchbox"  />
 	</order>

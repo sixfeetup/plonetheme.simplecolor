@@ -33,7 +33,8 @@
     
 <stylesheet title=""
     id="mediaqueries.css"
-    media="screen" rel="stylesheet" rendering="link"
+    media=""
+    rel="stylesheet" rendering="link"
     cacheable="True" compression="safe" cookable="True"
     enabled="1" expression=""/>
 
