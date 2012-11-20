@@ -11,7 +11,6 @@ body{
     }
 
 #portal-header{
-    height:60px;
     width:100%;
     margin:0px;
     padding:0px;
@@ -33,41 +32,6 @@ body{
     -moz-border-radius: 10px;
     border-radius: 10px;
     background-color:#F4FCFF;
-}
-
-
-#portal-searchbox{
-    clear:right;
-    padding:0px;
-    margin-top:4px;
-    margin-right:4px;
-}
-
-.searchSection{display:none;}
-
-#portal-siteactions{
-	clear:none;
-	float:right;
-	padding-top:4px;
-	padding-bottom:0px;
-}
-
-#portal-siteactions li a {
-    border: none;
-    color: #000000;
-}
-
-#portal-siteactions li.selected a {
-    background-color: #dee7ec;
-    color: #436976;
-    border: 1px solid #8cacbb;
-}
-
-#portal-siteactions li a:hover {
-    background-color: transparent;
-    color: #000000;
-    border: none;
-    text-decoration:underline;
 }
 
 #titlebox{
@@ -125,6 +89,40 @@ body{
     color:#004f00;
 }
 
+#portal-searchbox{
+    clear:right;
+    padding:0px;
+    margin-top:4px;
+    margin-right:4px;
+}
+
+.searchSection{display:none;}
+
+#portal-siteactions{
+	clear:none;
+	float:right;
+	padding-top:4px;
+	padding-bottom:0px;
+}
+
+#portal-siteactions li a {
+    border: none;
+    color: #000000;
+}
+
+#portal-siteactions li.selected a {
+    background-color: #dee7ec;
+    color: #436976;
+    border: 1px solid #8cacbb;
+}
+
+#portal-siteactions li a:hover {
+    background-color: transparent;
+    color: #000000;
+    border: none;
+    text-decoration:underline;
+}
+
 .portaltype-coursetitle #portal-breadcrumbs{
     display:none;
 }
@@ -155,7 +153,7 @@ body{
 
 #portal-column-content{
     background-color:#ffffff; 
-    width:79%;
+    width:80%;
     float:right;
     margin:0px 0px 4px 0px;
     padding:0px;
@@ -211,7 +209,6 @@ body{
     float:left;
     width:18%;
     margin:0;
-    margin-right:.5em;
     border:solid #AC5867;
     border-width:1px 4px 4px 1px;
     border-right-color:#8B4753;

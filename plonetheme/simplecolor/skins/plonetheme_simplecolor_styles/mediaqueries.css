@@ -1,6 +1,11 @@
 /*MOBILE STYLES*/
+/* 1. Max width 1000px */
+/* 2. Max width 800px */
+/* 3. Max width 600px */
 
-@media only screen and  (max-width : 1000px) {
+
+/* 1. Max width 1000px */
+@media only screen and  (max-device-width: 1000px),(max-width : 1000px) {
 
 	#portal-top{
     background-image:none;
@@ -26,7 +31,9 @@
 
 }/*END WIDTH 1000PX*/
 
-@media only screen and  (max-width : 800px) {
+
+/* 2. Max width 800px */
+@media only screen and (max-device-width: 800px), (max-width : 800px) {
 	#psulogo{
 	margin-left:5px;
 	}
@@ -53,106 +60,108 @@
     #portal-column-one{
     width:20%;
     }
-}
+}/*END WIDTH 800PX*/
 	
 
 
 
+/* 3. Max width 600px */
+@media screen and (max-device-width: 600px),(max-width: 600px){
 
-@media only screen and  (max-width : 600px) {
+	#visual-portal-wrapper {
+    	margin: 5px 15px 0;
+	}
 
-#visual-portal-wrapper {
-    margin: 5px 15px 0;
-}
-#portal-top{
-    background-image:none;
-    border-width:1px;
-}
+	#portal-top{
+    	background-image:none;
+    	border-width:1px;
+	}
 
-#portal-header{
-    height:80px;
-}
+	#portal-header{
+    	height:80px;
+	}
 
-#titlebox {
-    height: auto;
-    width: 100%;
-}
+	#titlebox {
+    	display:block;
+   		height: auto;
+    	width: 100%;
+	}
 
-#psulogo{
-    width:100px;
-    margin-left:10px;
-}
+	#psulogo{
+    	width:100px;
+    	margin-left:10px;
+	}
 
-#cla{
-     width:auto;
-}
+	#cla{
+		width:auto;
+	}
 
-#liberalarts {
-    font-size: 1.3em;
-}
+	#liberalarts {
+    	font-size: 1.3em;
+	}
 
-#portal-column-one {
-    background-color: #AC5867;
-    border: 1px solid #AC5867;    
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    float: none;
-    margin: 0 0 1em 0;
-    width: 100%;
-}
+	#portal-column-one {
+		background-color: #AC5867;
+    	border: 1px solid #AC5867;    
+    	-webkit-border-radius: 10px;
+    	-moz-border-radius: 10px;
+    	border-radius: 10px;
+    	float: none;
+   		margin: 0 0 1em 0;
+    	width: 100%;
+	}
 
-.portletNavigationTree .portletHeader{
-    background-color:#AC5867;
-    border:none;
-    -webkit-border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    border-radius: 10px 10px 10px 10px;
+	.portletNavigationTree .portletHeader{
+    	background-color:#AC5867;
+   		border:none;
+   		-webkit-border-radius: 10px 10px 10px 10px;
+    	-moz-border-radius: 10px 10px 10px 10px;
+    	border-radius: 10px 10px 10px 10px;
     }
 
-dl.portletNavigationTree dd.portletItem {
-     display:none;
-}
+	dl.portletNavigationTree dd.portletItem {
+    	display:none;
+	}
 
-#portal-column-content {
-    background-color: #FFFFFF;
-    border: 1px solid #5B82AA;
-    border-radius: 10px 10px 10px 10px;
-    float: none;
-    margin: 0 0 4px;
-    padding: 0;
-    width: auto;
-}
+	#portal-column-content {
+    	background-color: #FFFFFF;
+    	border: 1px solid #5B82AA;
+    	border-radius: 10px 10px 10px 10px;
+    	float: none;
+    	margin: 0 0 4px;
+    	padding: 0;
+    	width: auto;
+	}
 
-#portal-siteactions{
-     display:none;
-}
+	#portal-siteactions{
+    	display:none;
+	}
 
-#portal-searchbox{
-    display:none;
-}
+	#portal-searchbox{
+    	display:none;
+	}
 
-#headcoursetitle {
-	clear:both;
-	float:none;
-    display:block;
-    margin-top: 5px;
-    padding-left:0;
-    text-align: center;
-    margin-left:0;
+	#headcoursetitle {
+		clear:both;
+		float:none;
+    	display:block;
+    	margin-top: 5px;
+    	padding-left:0;
+    	text-align: center;
+    	margin-left:0;
     }
 
-#headcoursetitle h2{
-    display:block;
-    font-size:1.3em;
-}
+	#headcoursetitle h2{
+    	display:block;
+    	font-size:1.3em;
+	}
 
-#headcoursetitle h3{
-    font-size:.6em;
-}
+	#headcoursetitle h3{
+    	font-size:.6em;
+	}
 
-#courseimagetile{
-     display:none;
-}
+	#courseimagetile{
+    	display:none;
+	}
 
-}
+}/*END WIDTH 600PX*/
