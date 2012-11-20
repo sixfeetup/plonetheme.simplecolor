@@ -122,6 +122,10 @@
 	dl.portletNavigationTree dd.portletItem {
     	display:none;
 	}
+	
+	dl.portletStaticText dd.portletItem {
+    	display:none;
+	}
 
 	#portal-column-content {
     	background-color: #FFFFFF;
@@ -164,4 +168,8 @@
     	display:none;
 	}
 
+	/*do not display additional portlets in column one*/
+	 .portlet.portletStaticText {
+        display:none;
+    }
 }/*END WIDTH 600PX*/
