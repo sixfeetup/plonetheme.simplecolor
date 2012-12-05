@@ -10,6 +10,15 @@
       description='Extension profile for the "Simplecolor" Plone theme.'
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
+      
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="Simplecolor Theme Uninstall"
+      directory="profiles/uninstall"
+      description='Uninstall profile for the "Simplecolor Theme" Plone theme.'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
 
   <genericsetup:importStep
       name="plonetheme.simplecolor.various"

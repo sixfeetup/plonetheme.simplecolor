@@ -21,7 +21,6 @@
                   </span>  
             </a>
           </tal:previous>
-         <span class="listingPages"></span>
 
             <a class="listingNext" href="" 
                title="Go to next item"

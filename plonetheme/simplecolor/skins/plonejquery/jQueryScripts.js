@@ -13,7 +13,7 @@ $(window).load(function(){
              }, 
                  function() {          
                  $("dl.portletNavigationTree dd.portletItem").hide();
-                 $("#portal-column-one").css({"background-color":"#AC5867"});
+                 $("#portal-column-one").css({"background-color":"#66000"});
                       
                  }
        );

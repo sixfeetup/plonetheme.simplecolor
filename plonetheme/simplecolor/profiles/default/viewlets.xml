@@ -35,8 +35,8 @@
   </order>
   
     <order manager="plone.portalheader" skinname="Simplecolor">
-    	<viewlet name="plonetheme.simplecolor.logo" insert-before="plone.site_actions"/>
-    	<viewlet name="plone.site_actions" insert-before="plone.searchbox"/>
+    	<viewlet name="plonetheme.simplecolor.logo"/>
+    	<!--<viewlet name="plone.site_actions" insert-before="plone.searchbox"/>-->
     	<viewlet name="plone.searchbox"  />
 	</order>
     
@@ -71,6 +71,7 @@
   
   <hidden manager="plone.portalheader" skinname="Simplecolor">
 		<viewlet name="plone.logo" />
+		<viewlet name="plone.site_actions"/>
 		<viewlet name="plone.personal_bar" />
 		<viewlet name="plone.global_sections" />
   </hidden>
@@ -80,14 +81,14 @@
 		<!--<viewlet name="plone.path_bar" />-->
   </hidden>
   
-   <hidden manager="plone.belowcontentbody" skinname="Simplecolor">
-  <viewlet name="plone.documentactions"/>
-  <viewlet name="plone.abovecontenttitle.documentactions"/>
- </hidden>
+	<hidden manager="plone.belowcontentbody" skinname="Simplecolor">
+  		<viewlet name="plone.documentactions"/>
+  		<viewlet name="plone.abovecontenttitle.documentactions"/>
+	</hidden>
   
   <hidden manager="plone.portalfooter" skinname="Simplecolor">
     	<viewlet name="plone.footer" />
-    	<viewlet name="plone.site_actions" />
+    	<!--<viewlet name="plone.site_actions" />-->
     	<viewlet name="plone.colophon" />
   </hidden> 
 

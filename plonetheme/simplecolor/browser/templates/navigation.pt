@@ -2,11 +2,9 @@
 <dl class="portlet portletNavigationTree"  
     tal:define="root view/navigation_root">
    
-    <dt class="portletHeader"> 
+    <dt class="portletHeader">
         <span class="portletTopLeft"></span>
-       <a href="#" title="Display navigation links">
-       <div id="coursetitle">Course Navigation</div>
-       </a>
+       Course Navigation
         <span class="portletTopRight"></span>
     </dt>
 
