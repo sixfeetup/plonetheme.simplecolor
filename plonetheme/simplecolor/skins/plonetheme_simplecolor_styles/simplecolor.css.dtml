@@ -307,7 +307,7 @@ dl.portletNavigationTree dd.portletItem{
     padding:3px 3px;
 	}
 
-.lessonpagelistingBar a{
+.lessonpagelistingBar a:link, a:visited{
     border: 0.1em solid #cccccc;
     text-decoration:none;
     -webkit-border-radius: 6px;
@@ -315,32 +315,33 @@ dl.portletNavigationTree dd.portletItem{
     border-radius: 6px;
 	}
 	
-.lessonpagelistingBar a:hover{
+#content .lessonpagelistingBar a:hover{
     color:#000000 !important;
     background-color:#EDEDED;
 	}
 	
 div .listingBar{
+    clear:both;
     margin-top:4px;
     padding:4px;
     background-color:transparent;
     border:none;
 	}
 
-.listingBar a:hover{
-    background-color:#EDEDED;
-    color:#000000;
-	}
-
-div.listingBar a:link {
+div.listingBar a:link, a:visited{
     border: 0.1em solid #cccccc;
     display: inline-block;
     padding: 4px;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
-    color:#757575 !important;
 	}
+	
+div.listingBar a:hover{
+    background-color:#EDEDED;
+    color:#000000;
+	}
+	
 
 .listingBar .previous {
 	float:left;
