@@ -121,6 +121,7 @@
    		-webkit-border-radius: 5px 5px 5px 5px;
     	-moz-border-radius: 5px 5px 5px 5px;
     	border-radius: 5px 5px 5px 5px;
+    	cursor:pointer;
     }
 
 	dl.portletNavigationTree dd.portletItem {

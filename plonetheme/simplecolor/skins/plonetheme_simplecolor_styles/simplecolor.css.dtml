@@ -402,6 +402,10 @@ h1, h2 {
     color:#4E403A;
     padding:8px;
     margin:5px;
+    border:1px solid #331D00;
+    -moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius:5px;
     }
 .beigeboxLeft{   
     float:left;
@@ -410,6 +414,10 @@ h1, h2 {
     color:#4E403A;
     padding:8px;
     margin:5px 5px 5px 0px;
+    border:1px solid #331D00;
+    -moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius:5px;
     }
 .beigeboxRight{
     float:right;
@@ -418,6 +426,10 @@ h1, h2 {
     color:#4E403A;
     padding:8px;
     margin:5px 0px 5px 5px;
+    border:1px solid #331D00;
+    -moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius:5px;
     }
 .imageLeft{
     float:left;
@@ -485,12 +497,13 @@ h1, h2 {
 
 /*Question/Answer Show/Hide Divs*/
 .question{
-        background:#F4F4E5;
+    background:#F4F4E5;
 	padding:6px;
 	border:1px solid #331D00;
 	margin:5px 0px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
+	border-radius:5px;
 	}
 			
 .answer{
@@ -500,6 +513,7 @@ h1, h2 {
 	margin:5px 0px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
+	border-radius:5px;
 	}
 .showAnswer{
 	width:130px;
