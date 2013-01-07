@@ -173,8 +173,12 @@
     	display:none;
 	}
 
-	/*do not display additional portlets in column one*/
+/*do not display additional portlets in column one*/
 	 .portlet.portletStaticText {
         display:none;
     }
+    
+    .portlet-editors{
+        display:none;
+        }
 }/*END WIDTH 600PX*/
