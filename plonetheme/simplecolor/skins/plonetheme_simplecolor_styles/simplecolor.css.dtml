@@ -73,7 +73,7 @@ body{
     padding-bottom:4px;
 }
 
-#headcoursetitle h2{
+#headcoursetitle h1{
 	color:#004f00;
     font-family:Garamond;
     font-weight:normal;
@@ -83,9 +83,10 @@ body{
     border-bottom:none;
 }
 
-#headcoursetitle h3{
+#headcoursetitle h2{
 	color:#004f00;
     font-size:.8em;
+    border-bottom:none;
 }
 
 #portal-searchbox{

@@ -9,7 +9,7 @@
 	</div>
 
 	<div id="headcoursetitle" tal:condition="context/course_title">
-         <h2 tal:content="view/context/course_title">[course title property]</h2>
-         <h3 tal:content="view/context/course_number">[course number property]</h3>
+         <h1 tal:content="view/context/course_title">[course title property]</h1>
+         <h2 tal:content="view/context/course_number">[course number property]</h2>
     </div>  
 </div>
