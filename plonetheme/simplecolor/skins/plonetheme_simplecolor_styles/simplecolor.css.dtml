@@ -288,6 +288,21 @@ dl.portletNavigationTree dd.portletItem{
     color:#FFFFFF;
     }
 
+/*Editors Portlet*/    
+.portlet-editors {
+    font-size:.8em;
+    color:blue;
+}
+
+.portlet-editors .portletHeader{
+    padding-left:1em;
+}
+
+.portlet-editors .portletItem{
+    padding-left:1em;
+}
+
+
 
 /*STYLES FOR PREVIOUS-NEXT DIV*/
 .lessonpagelistingBar{

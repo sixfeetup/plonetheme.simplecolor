@@ -149,6 +149,10 @@
 	#portal-searchbox{
     	display:none;
 	}
+	
+	div.row #portal-searchbox {
+    	display: none !important;
+	}
 
 	#headcoursetitle {
 		clear:both;
