@@ -1,6 +1,6 @@
 <div id="titlebox">
 	<div id="psulogo">
-		<a href="http://www.psu.edu" target="_blank"><img src="logo.gif" height="45" width="97" alt="Penn State Home Page"/>
+		<a href="http://www.psu.edu" target="_blank" title="Penn State Home"><img src="logo.gif" height="45" width="97" alt="Penn State Home Page"/>
 	</div>
 	
 	<div id="cla">
@@ -9,7 +9,8 @@
 	</div>
 
 	<div id="headcoursetitle" tal:condition="context/course_title">
-         <h1 tal:content="view/context/course_title">[course title property]</h1>
+	    <a tal:attributes="href string:${context/portal_url}" title="Course Home page.">
+         <h1 tal:content="view/context/course_title">[course title property]</h1></a>
          <h2 tal:content="view/context/course_number">[course number property]</h2>
     </div>  
 </div>

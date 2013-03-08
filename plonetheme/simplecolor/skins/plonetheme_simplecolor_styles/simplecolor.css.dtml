@@ -3,11 +3,13 @@
 
 /*SIMPLECOLOR THEME STYLES*/
 body{
-    background-image:url("lightpaperfibers.png");
-}
+    background-image:url("bg-paper2.jpg");
+ background-color:#F5F5EC;
+   }
 
 #visual-portal-wrapper{
-    margin:5px 15px 0px 15px;
+    margin:0px 0px 0px 0px;
+    padding:0px;
     }
 
 #portal-header{
@@ -21,30 +23,26 @@ body{
 }
 
 #portal-top{
-    background-image:url(oldMain.jpg);
-    background-repeat:no-repeat;
-    padding:0;
-    margin-bottom:.8em;
-    margin-top:4px;
-    border:solid #004f00;
-    border-width:1px 4px 4px 1px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    background-color:#F4FCFF;
+    background-color:transparent;
+    min-height:50px;
+    margin-top:0px;
+    margin-bottom:0px;
+    border-bottom:solid 1px #8C1B2F;
 }
 
 #titlebox{
     float:left;
     width:auto;
     margin-top:0;
-    background-image:none;
+    background-image:url(oldMain.png);
+    background-repeat:no-repeat;
     }
 
 #psulogo{
     float:left;
     width:90px;
-    margin-left:24px;
+    margin-left:28px;
+    margin-bottom:4px;
     padding-top:5px;
 }
 
@@ -66,7 +64,7 @@ body{
 }
 
 #headcoursetitle{
-	float:left;
+    float:left;
     margin-top:8px;
     text-align:center;
     margin-left:2.0em;
@@ -74,17 +72,19 @@ body{
 }
 
 #headcoursetitle h1{
-	color:#004f00;
-    font-family:Garamond;
-    font-weight:normal;
+    color:#074C76;
+    letter-spacing:normal;
+    font-family:Tahoma, Geneva, sans-serif;
+    font-weight:600;
     line-height:90%;
-    font-size:1.6em;
+    font-size:1.2em;
     margin:0;
     border-bottom:none;
 }
 
 #headcoursetitle h2{
-	color:#004f00;
+    color:#867A68;
+    letter-spacing:normal;
     font-size:.8em;
     border-bottom:none;
 }
@@ -92,36 +92,11 @@ body{
 #portal-searchbox{
     clear:right;
     padding:0px;
-    margin-top:4px;
-    margin-right:4px;
+    margin-top:8px;
+    margin-right:8px;
 }
 
 .searchSection{display:none;}
-
-#portal-siteactions{
-	clear:none;
-	float:right;
-	padding-top:4px;
-	padding-bottom:0px;
-}
-
-#portal-siteactions li a {
-    border: none;
-    color: #000000;
-}
-
-#portal-siteactions li.selected a {
-    background-color: #dee7ec;
-    color: #436976;
-    border: 1px solid #8cacbb;
-}
-
-#portal-siteactions li a:hover {
-    background-color: transparent;
-    color: #000000;
-    border: none;
-    text-decoration:underline;
-}
 
 .portaltype-coursetitle #portal-breadcrumbs{
     display:none;
@@ -132,41 +107,66 @@ body{
 }
 
 #portal-breadcrumbs{
-    background-color:#003366;
-    -webkit-border-radius: 8px 8px 0px 0px;
-    -moz-border-radius: 8px 8px 0px 0px;
-    border-radius: 8px 8px 0px 0px;
+    background-color:transparent;
+    color:#000000;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
     padding:4px;
-    color:#FFFFFF;
     font-size: 90%;
     margin-bottom: 0;
     margin-left: 0;
     }
 
 #portal-breadcrumbs a {
-    color:#FFF;
+    color:#074C76;
+}
+
+#breadcrumbs-current{
+    color:#645B4D;
 }
 
 #portal-columns{
    background-color:transparent;   
 }
 
+#portal-column-one {
+    float:left;
+    width:15%;
+    margin-left:1%;
+    margin-top:10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
 #portal-column-content{
-    background-color:#ffffff; 
-    width:80%;
-    float:right;
-    margin:0px 0px 4px 0px;
-    padding:0px;
-    border:solid #003366;
-    border-width:1px 4px 4px 1px;
+    float:left;
+    width:83%;
+    margin-right:1%;
+    background-color:#ffffff;
+    margin:10px 0px 4px 0px;
+    padding:0px 0px 10px 0px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
 }
 
 #content{
-    padding:0px 20px 0px 20px;
+    background-color:#ffffff;
+    padding:0 2%;
     margin:0;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.template-lessontitle_view .documentFirstHeading{
+    color:#645B4D;
+}
+
+.template-lessonpage_view .documentFirstHeading{
+    color:#645B4D;
 }
 
 #viewlet-below-content{
@@ -178,9 +178,9 @@ body{
 	background-image:url(&dtml-portal_url;/&dtml-courseImageTile;);
 	background-repeat:x-repeat;
     clear: both;
-    margin-left: -20px;
-    margin-right: -20px;
-    margin-top: 0px;
+    margin-left:-2%;
+    margin-right:-2%;
+    margin-top: 0;
     overflow: hidden;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -203,17 +203,7 @@ body{
 	background-repeat:no-repeat;
 	}
 
-#portal-column-one {
-    float:left;
-    width:18%;
-    margin:0;
-    border:solid #660000;
-    border-width:1px 4px 4px 1px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    background-color:#FFFFFF;
-}
+
 
 /*NAVIGATION PORTLET STYLES*/
 
@@ -221,11 +211,16 @@ body{
     padding-left:.5em;
 }
 
+.portletNavigationTree .portletHeader{
+    background-color:transparent;
+    color:#074C76;
+    border:none;
+    }
+
 dl.portlet ul.navTreeLevel0 > .navTreeItem {
-    /*border-bottom: 0.1em dotted #4573A2;*/
     border-bottom:none;
     line-height: 1em;
-    padding: 0.25em 0em;
+    padding: 0.1em 0em;
 }
 
 .navTree .navTreeLevel1{
@@ -241,9 +236,9 @@ dl.portlet  a:hover {
 }
 
 dl.portlet ul.navTree .navTreeCurrentItem {
-    background-color: #DFD8DA;
+    background-color: #FFFFFF;
     color:#000000;
-    padding:2px 0px 2px 4px;
+    padding:2px 2px 2px 2px;
     border-left: none;
     margin-left: 0;
     margin-right: 0;
@@ -253,27 +248,20 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     border:none;
     }
 
-.portletNavigationTree .portletHeader{
-    background-color:#660000;
-    color:#FFFFFF;
-    border:none;
-    -webkit-border-radius: 8px 8px 0px 0px;
-    -moz-border-radius: 8px 8px 0px 0px;
-    border-radius: 8px 8px 0px 0px;
-    }
 
 
 dl.portletNavigationTree dd.portletItem{
-    padding-left:.5em;
+    padding-left:1em;
 }
 
 .navTreeItem a, dd.portletItem .navTreeItem a{
     border: none;
-    color:#631926;
+    color:#074C76;
+    padding:2px 4px 2px 2px;
     }
 
 .navTreeItem a:hover, dd.portletItem .navTreeItem a:hover{
-    background-color: #DFD8DA; 
+    background-color: #FFFFFF; 
     color: #000 !important;
     border:none;
     margin-right:0px;
@@ -285,24 +273,40 @@ dl.portletNavigationTree dd.portletItem{
 
 .portletStaticText{
     margin:3px 7px 3px 3px;
-    color:#FFFFFF;
+    color:#000000;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5x;
+    border-radius: 5px;
+    }
+    
+.portletStaticText .portletHeader{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5x;
+    border-radius: 5px;
     }
 
-/*Editors Portlet*/    
-.portlet-editors {
+/*EDITOR'S PORTLET*/
+.portlet-editors{
     font-size:.8em;
-    color:blue;
-}
-
-.portlet-editors .portletHeader{
-    padding-left:1em;
-}
+    background-color:#ffffff;
+    margin:3px;
+	border:1px solid #074C76;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5x;
+    border-radius: 5px;
+	}
 
 .portlet-editors .portletItem{
     padding-left:1em;
 }
 
-
+.portlet-editors .portletHeader{
+	background-color:#074C76;
+	color:#FFFFFF;
+	padding:2px 5px 4px 1em;
+	font-weight:bold;
+	font-size:1.0em;
+	}
 
 /*STYLES FOR PREVIOUS-NEXT DIV*/
 .lessonpagelistingBar{
@@ -310,13 +314,14 @@ dl.portletNavigationTree dd.portletItem{
     float:right;
     border:none;
     background-color:transparent;
-    margin:0px 0px .8em .8em;
-    padding:0 5px;
+    margin:2px 0px .8em .8em;
+    padding:5px;
     }
 
 .lessonpagelistingBar .listingNext{
     float:right;
-    padding:0px 3px;
+    padding:1px 3px;
+    margin-top:-2px;
 	}
 	
 .lessonpagelistingBar .listingPrevious{
@@ -358,7 +363,6 @@ div.listingBar a:hover{
     color:#000000;
 	}
 	
-
 .listingBar .previous {
 	float:left;
 	}
@@ -371,12 +375,12 @@ div.listingBar a:hover{
 }
 
 #portal-footer{
-	background-color:transparent;
-	color:#000;
-	margin:0;
-	text-align:center;
-        line-height:1.5em;
-	border-bottom:none;
+    background-color:transparent;
+    color:#000;
+    margin:0;
+    text-align:center;
+    line-height:1.5em;
+    border-bottom:none;
     border-top:none;
 }
 
@@ -387,12 +391,38 @@ div.listingBar a:hover{
 #portal-footer a:visited{
     color:#000;
     }
+ 
+#portal-siteactions{
+    clear:none;
+    float:right;
+margin-right:2%;
+    padding-top:4px;
+    padding-bottom:0px;
+}
+
+#portal-siteactions li a {
+    border: none;
+    color: #000000;
+}
+
+#portal-siteactions li.selected a {
+    background-color: #dee7ec;
+    color: #436976;
+    border: 1px solid #8cacbb;
+}
+
+#portal-siteactions li a:hover {
+    background-color: transparent;
+    color: #000000;
+    border: none;
+    text-decoration:underline;
+}
+
 
 /*GIVE WHITE BG TO CONTROL PANEL OPTIONS*/
 #portlet-prefs{
     background-color:#ffffff;
 }
-
 
 .documentActions li{
     float:right;
@@ -491,25 +521,27 @@ h1, h2 {
 }
 
 /*STYLES FOR CUSTOM FUNCTIONS*/
-
 .template-coursetitle_view  .documentFirstHeading{
 	color:#867A68;
 	font-weight:600;
 	font-size:180%;
 }
 
+
 /*BLOCK DOCUMENT AUTHOR*/
-#content #plone-document-byline{display:none;}
+#content #plone-document-byline{
+	display:none;
+	}
+
 
 /*SHOW DOCUMENT AUTHOR FOR COMMENTING*/
-.comment .documentByLine{display:block;}
-.comment .documentAuthor{display:block;}
+.comment .documentByLine{
+	display:block;
+	}
+.comment .documentAuthor{
+	display:block;
+	}
 
-/*EDITOR'S PORTLET*/
-.portlet-editors{border-top:0px;border-left:0px;border-right:2px solid #000;border-bottom:2px solid #000;}
-.portletHeader{border:none;}
-.portlet-editors{background:#ECE7D4;color:#000;}
-.portlet-editors .portletHeader{background:#867A68;color:#FFF;font-weight:bold;font-size:1.2em;}
 
 /*Question/Answer Show/Hide Divs*/
 .question{
@@ -531,36 +563,39 @@ h1, h2 {
 	-webkit-border-radius: 5px;
 	border-radius:5px;
 	}
+	
 .showAnswer{
 	width:130px;
-        cursor:pointer;
-        margin-top:3px;
+    cursor:pointer;
+    margin-top:3px;
 	}
+	
 /* SIMPLE SLIDESHOW */
-     .slideshow{
-       padding:10px;
-        border:1px solid #000000;
-        background-color:#000000;
-        color:#FFF;
+.slideshow{
+    padding:10px;
+    border:1px solid #000000;
+    background-color:#000000;
+    color:#FFF;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	}
 			
-     .slideshow a{
+.slideshow a{
 	color:#FFF;
 	cursor:pointer;
 	}
 				
-     .slideshowheading{
+.slideshowheading{
 	text-align:left;
 	margin:0px;
-        color:#FFF;
+    color:#FFF;
 	}
 
-     .imagelinks{
-        margin-bottom:5px;
-        }
-     .captiondiv{
+.imagelinks{
+    margin-bottom:5px;
+    }
+     
+.captiondiv{
 	position:relative;
 	z-index:10;
 	margin-top:-1em;
