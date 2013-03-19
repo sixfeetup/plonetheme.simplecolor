@@ -4,7 +4,6 @@ $(document).ready(function(){
 
 ///************SHOW/HIDE NAVIGATION LINKS *************
 
-
      $('.portletNavigationTree .portletHeader').toggle(
 
                  function () {         
@@ -13,7 +12,7 @@ $(document).ready(function(){
              }, 
                  function() {          
                  $("dl.portletNavigationTree dd.portletItem").hide();
-                 $("#portal-column-one").css({"background-color":"#66000"});
+                 //$("#portal-column-one").css({"background-color":"#66000"});
                       
                  }
        );

@@ -96,21 +96,21 @@
 	}
 
 	#portal-column-one {
-	background-color: #074C76;
+		background-color: #074C76;
     	border: 1px solid #074C76;    
     	-webkit-border-radius: 10px;
     	-moz-border-radius: 10px;
     	border-radius: 10px;
     	float: none;
-   	margin: 0 0 1em 0;
+   		margin: 0 0 1em 0;
     	width: 100%;
 	}
 
 	.portletNavigationTree .portletHeader{
     	background-color:#074C76;
         color:#ffffff;
-   	border:none;
-   	-webkit-border-radius: 5px 5px 5px 5px;
+   		border:none;
+   		-webkit-border-radius: 5px 5px 5px 5px;
     	-moz-border-radius: 5px 5px 5px 5px;
     	border-radius: 5px 5px 5px 5px;
     	cursor:pointer;
@@ -167,6 +167,11 @@
 
 	#courseimagetile{
     	display:none;
+	}
+	
+/*do not display print all pages link*/
+	#document-action-printall {
+    display:none;
 	}
 
 /*do not display additional portlets in column one*/

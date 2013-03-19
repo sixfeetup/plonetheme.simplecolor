@@ -76,7 +76,7 @@ body{
     letter-spacing:normal;
     font-family:Tahoma, Geneva, sans-serif;
     font-weight:600;
-    line-height:90%;
+    line-height:100%;
     font-size:1.2em;
     margin:0;
     border-bottom:none;
@@ -209,6 +209,10 @@ body{
 
 .portlet{
     padding-left:.5em;
+}
+
+dl.portlet {
+    margin-bottom: 0px;
 }
 
 .portletNavigationTree .portletHeader{
@@ -395,9 +399,10 @@ div.listingBar a:hover{
 #portal-siteactions{
     clear:none;
     float:right;
-margin-right:2%;
+	margin-right:2%;
     padding-top:4px;
     padding-bottom:0px;
+    margin-bottom:1em;
 }
 
 #portal-siteactions li a {
@@ -603,11 +608,5 @@ h1, h2 {
 	opacity:.8;
 	color:#FFF;
 	}
-	
-#content p, #content table, #content dl, dl.portlet p, dl.portlet {
-    margin-bottom: 0;
-}
-
-
 	
 /* </dtml-with> */
