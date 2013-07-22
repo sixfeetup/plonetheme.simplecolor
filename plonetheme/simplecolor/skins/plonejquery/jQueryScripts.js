@@ -59,7 +59,7 @@ $(document).ready(function(){
 			function(elementID) {
 				return function(){
 					//$("#answer" + elementID).hide();
-					$(".answer").css({"position":"absolute","left":"-9999px"});
+					$("#answer" + elementID).css({"position":"absolute","left":"-9999px"});
 					
 					$("#question" + elementID + "> img").attr('src', 'checkAnswerBG.gif');
 					

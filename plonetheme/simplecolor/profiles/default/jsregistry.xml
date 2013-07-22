@@ -25,7 +25,7 @@
 -->
 
     <javascript id="jQueryScripts.js"
-    cacheable="True" compression="safe" cookable="False"
+    cacheable="False" compression="safe" cookable="False"
     enabled="True" expression="" inline="False"/>
   
   <javascript id="ezpz_tooltip.js"
