@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<site>
+ <property name="course_title"
+    type="string">Department of Online Education</property>
+ <property name="course_number" type="string"></property>
+ <property name="course_author" type="string"></property>
+</site>
