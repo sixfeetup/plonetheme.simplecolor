@@ -8,6 +8,7 @@
   <cmf:registerDirectory name="plonetheme_simplecolor_custom_templates"/>
   <cmf:registerDirectory name="plonetheme_simplecolor_styles"/>
   <cmf:registerDirectory name="plonejquery"/>
+  <cmf:registerDirectory name="course_styles"/>
  
   <!-- Note: This could also be done for all folders at once
        by replacing the previous lines with this one:

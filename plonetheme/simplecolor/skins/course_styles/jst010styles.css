@@ -1,0 +1,105 @@
+/*TABLE OF CONTENTS IN THEMEATIC PAGES*/
+.toc{clear:right;}
+
+.template-coursetitle_view #viewlet-above-content{
+    display:none;
+}
+
+#viewlet-above-content {
+    margin:0em 0em 0em -1em;
+    padding:0px;
+}
+
+#viewlet-above-content .portletHeader{
+     display:none;
+}
+
+.portlet-static-top-links .portletItem{
+    margin:0;
+    padding:0;
+}
+
+#portal-breadcrumbs{
+    margin-top:5px;
+    margin-bottom:5px;
+    margin-left:20px;
+}
+
+.coursefilelinks{
+     width:100%;
+     border-collapse:collapse;
+     padding:0px;;
+     margin:0px;
+     border:none;
+     background-color:#ECE6D8;
+}
+
+.documentContent dd .coursefilelinks  a {
+     border-bottom: none;
+}
+
+.coursefilelinks td{
+     text-align:center;
+     border-right:1px solid #8CACBB;
+}
+
+.coursefilelinks td:hover{
+     background-color:#fff;\
+}
+
+/*EZPZ TOOL TIP*/
+     .tooltip-target{
+	color:#436976;
+	text-decoration:underline;
+        background-color: #EBEBEB;
+	}
+
+     .tooltip-content{
+	/*display: none;      required */
+	/*position: absolute;   required */
+        z-index:100;
+	padding: 5px;
+	margin:0 10px;
+	border: 1px solid black;
+	-moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+	background-color: #EBEBEB;
+	max-width:400px;
+}
+
+.gloss-tooltip-content{
+	background-color: #B6F9E9;
+}
+
+/*MORE ABOUT BOX*/
+.moreabout{
+    width:300px;
+    float:right;
+    margin-left:8px;
+    background-color:#ECEDE8;
+    color:#335577;
+    padding:30px 10px 10px 10px;
+    background-image:url('moreabout.gif');
+    background-repeat:no-repeat;
+    border: 3px solid #335577;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+     }
+
+/*ASTERIK BOX*/
+.asterikbox{
+	background-color:#FFFFC0;
+	background-image:url(asterik.gif);
+	background-repeat:no-repeat;
+	padding:6px 10px 10px 25px;
+	border: 1px solid #000;
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.asterikinline{
+	background-color:#FFFFC0;
+	padding-left:15px;
+	background-image:url(asterik3.gif);
+	background-repeat:no-repeat;
+}
