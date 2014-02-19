@@ -207,10 +207,6 @@ body{
 
 /*NAVIGATION PORTLET STYLES*/
 
-.portlet{
-    padding-left:.5em;
-}
-
 dl.portlet {
     margin-bottom: 0px;
 }
@@ -252,8 +248,6 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     border:none;
     }
 
-
-
 dl.portletNavigationTree dd.portletItem{
     padding-left:1em;
 }
@@ -275,43 +269,7 @@ dl.portletNavigationTree dd.portletItem{
     padding-left:0;
 }
 
-.portletStaticText{
-    margin:3px 7px 3px 3px;
-    color:#000000;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5x;
-    border-radius: 5px;
-    }
     
-.portletStaticText .portletHeader{
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5x;
-    border-radius: 5px;
-    }
-
-/*EDITOR'S PORTLET*/
-.portlet-editors{
-    font-size:.8em;
-    background-color:#ffffff;
-    margin:3px;
-	border:1px solid #074C76;
-	-webkit-border-radius: 5px;
-    -moz-border-radius: 5x;
-    border-radius: 5px;
-	}
-
-.portlet-editors .portletItem{
-    padding-left:1em;
-}
-
-.portlet-editors .portletHeader{
-	background-color:#074C76;
-	color:#FFFFFF;
-	padding:2px 5px 4px 1em;
-	font-weight:bold;
-	font-size:1.0em;
-	}
-
 /*STYLES FOR PREVIOUS-NEXT DIV*/
 .lessonpagelistingBar{
     width:auto;
@@ -436,15 +394,35 @@ div.listingBar a:hover{
 #document-action-printall{
 	padding-bottom:4px;
 	}
+	
+	
+/*STATIC TEXT PORTLET*/
+.portletStaticText{
+	margin:3px 7px 3px 3px;
+    color:#000000;
+    background-color:#ECE7D4;
+	border-top:0px;
+	border-left:0px;
+	border-right:2px solid #000;
+	border-bottom:2px solid #000;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5x;
+    border-radius: 5px;
+    }
 
-/*STYLES USED FOR GLOBAL NAVIGATION BAR - MODULE/UNIT OPTION*/
-#portal-globalnav {background-color: #ECE6D6;}
-#portal-globalnav li a {border:none;color:#000000;}
-#portal-globalnav li.selected a {background-color: #867A68;border:none;color:#FFFFFF;border-bottom:none;}
-#portal-globalnav li a:hover {background-color: #867A68;color:#FFFFFF;}
+.portletHeader{border:none;}
 
+.portletStaticText .portletHeader{
+	background:#867A68;
+	color:#FFF;
+	font-weight:bold;
+	font-size:1.2em;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5x;
+    border-radius: 5px;
+    }
 
-/* TINYMCE DROPDOWN LIST OF TEXT STYLES */
+/* EDITOR DROPDOWN LIST OF TEXT STYLES */
 h1, h2 {
     border-bottom:1px solid #867A68;
     }

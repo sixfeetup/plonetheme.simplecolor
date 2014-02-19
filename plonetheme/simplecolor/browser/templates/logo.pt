@@ -8,9 +8,11 @@
 		<span id="liberalarts">Liberal Arts</span>
 	</div>
 
-	<div id="headcoursetitle" tal:condition="context/course_title">
-	    <a tal:attributes="href string:${context/portal_url}" title="Course Home page.">
-         <h1 tal:content="view/context/course_title">[course title property]</h1></a>
-         <h2 tal:content="view/context/course_number">[course number property]</h2>
-    </div>  
+    <div id="headcoursetitle"
+         tal:condition="python:context.portal_type=='elearning.content.course'">
+       <a tal:attributes="href string:${context/portal_url}" title="Course Home page.">
+         <h1 tal:content="context/Title">[course title property]</h1></a>
+         <h2 tal:content="context/number">[course number property]</h2>
+    </div>
+
 </div>

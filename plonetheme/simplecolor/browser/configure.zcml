@@ -17,20 +17,6 @@
       />
       
    <!-- Zope 3 browser resources -->
-
-   <!-- Resource directory for images-->
-  <browser:resourceDirectory
-      name="plonetheme.simplecolor.images"
-      directory="images"
-      layer=".interfaces.IThemeSpecific"
-      />
-
-   <!-- Resource directory for stylesheets -->
-  <browser:resourceDirectory
-      name="plonetheme.simplecolor.stylesheets"
-      directory="stylesheets"
-      layer=".interfaces.IThemeSpecific"
-      />
       
   <!-- Resource directory for templates -->
     <browser:resourceDirectory
@@ -55,7 +41,6 @@
     <browser:viewlet
     	name="plonetheme.simplecolor.footer"
     	manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
-    	class="plone.app.layout.viewlets.common.LogoViewlet"
     	template="templates/footer.pt"
     	layer=".interfaces.IThemeSpecific"
     	permission="zope2.View"

@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+
+<object>
+  
+    <order manager="plone.abovecontent" skinname="Plone Default">
+      <viewlet name="plone.path_bar"/>
+     </order>
+     <order manager="plone.portalheader" skinname="Plone Default">
+      <viewlet name="plone.skip_links"/>
+      <viewlet name="plone.personal_bar"/>
+      <viewlet name="plone.app.i18n.locales.languageselector"/>
+      <viewlet name="plone.searchbox"/>
+      <viewlet name="plone.logo"/>
+      <viewlet name="plone.global_sections"/>
+      <viewlet name="collective.lineage.switcher"/>
+     </order>
+     <order manager="plone.belowcontent" skinname="Plone Default">
+      <viewlet name="plone.belowcontenttitle.keywords"/>
+      <viewlet name="plone.nextprevious"/>
+      <viewlet name="plone.manage_portlets_fallback"/>
+     </order>
+     <order manager="plone.belowcontentbody" skinname="Plone Default">
+      <viewlet name="plone.belowcontentbody.relateditems"/>
+      <viewlet name="plone.abovecontenttitle.documentactions"/>
+     </order>
+     <order manager="plone.portalfooter" skinname="Plone Default">
+      <viewlet name="plone.footer"/>
+      <viewlet name="plone.colophon"/>
+      <viewlet name="plone.site_actions"/>
+     </order>
+     <order manager="plone.debugtoolbar" skinname="Plone Default">
+      <viewlet name="plone.app.debugtoolbar.context"/>
+      <viewlet name="plone.app.debugtoolbar.interactive"/>
+      <viewlet name="plone.app.debugtoolbar.request"/>
+      <viewlet name="plone.app.debugtoolbar.response"/>
+      <viewlet name="plone.app.debugtoolbar.published"/>
+      <viewlet name="plone.app.debugtoolbar.theme"/>
+      <viewlet name="plone.app.debugtoolbar.user"/>
+      <viewlet name="plone.app.debugtoolbar.workflow"/>
+      <viewlet name="plone.app.debugtoolbar.global"/>
+      <viewlet name="plone.app.debugtoolbar.versions"/>
+      <viewlet name="plone.app.debugtoolbar.reload"/>
+     </order>
+     <order manager="plone.portaltop" skinname="Plone Default">
+      <viewlet name="plone.header"/>
+     </order>
+     <order manager="plone.contentviews" skinname="Plone Default">
+      <viewlet name="plone.contentviews"/>
+      <viewlet name="plone.contentactions"/>
+     </order>
+     <order manager="plone.debugtoolbar" skinname="Sunburst Theme">
+      <viewlet name="plone.app.debugtoolbar.context"/>
+      <viewlet name="plone.app.debugtoolbar.interactive"/>
+      <viewlet name="plone.app.debugtoolbar.request"/>
+      <viewlet name="plone.app.debugtoolbar.response"/>
+      <viewlet name="plone.app.debugtoolbar.published"/>
+      <viewlet name="plone.app.debugtoolbar.theme"/>
+      <viewlet name="plone.app.debugtoolbar.user"/>
+      <viewlet name="plone.app.debugtoolbar.workflow"/>
+      <viewlet name="plone.app.debugtoolbar.global"/>
+      <viewlet name="plone.app.debugtoolbar.versions"/>
+      <viewlet name="plone.app.debugtoolbar.reload"/>
+     </order>
+     <order manager="plone.portalheader" skinname="Sunburst Theme">
+      <viewlet name="collective.lineage.switcher"/>
+     </order>
+     
+<!--Hidden Viewlets-->
+
+  <hidden manager="plone.portaltop" purge="True">
+  </hidden>
+  <hidden manager="plone.portalheader" purge="True">
+  </hidden>
+  <hidden manager="plone.belowcontentbody" purge="True">
+  </hidden>
+  <hidden manager="plone.portalfooter" purge="True">
+  </hidden> 
+
+</object>
