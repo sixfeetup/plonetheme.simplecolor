@@ -150,6 +150,9 @@ body{
     -moz-border-radius: 10px;
     border-radius: 10px;
 }
+#portal-column-content.full-width {
+    width: 99%;
+}
 
 #content{
     background-color:#ffffff;

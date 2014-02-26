@@ -94,7 +94,9 @@
     
     
   
-        <div id="portal-column-content">
+        <div id="portal-column-content"
+             tal:define="full_class python:sl and ' ' or 'full-width'"
+             tal:attributes="class full_class">
 
             <div id="viewlet-above-content" tal:content="structure provider:plone.abovecontent" tal:condition="not:ajax_load" />
 
