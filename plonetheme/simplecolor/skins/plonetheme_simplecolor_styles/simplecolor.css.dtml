@@ -187,37 +187,6 @@ body{
     width: 20px;
 }
 
-#courseimagetile{
-    height:<dtml-var "_[courseImageTile].height">px;
-	background-image:url(&dtml-portal_url;/&dtml-courseImageTile;);
-	background-repeat:x-repeat;
-    clear: both;
-    margin-left:-2%;
-    margin-right:-2%;
-    margin-top: 0;
-    overflow: hidden;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-}
-
-#courseimageleft{
-	height:<dtml-var "_[courseImageLeft].height">px;
-	width:<dtml-var "_[courseImageLeft].width">px;
-	float:left;
-	background-image:url(&dtml-portal_url;/&dtml-courseImageLeft;);
-	background-repeat:no-repeat;
-	}
-
-#courseimageright{
-	height:<dtml-var "_[courseImageRight].height">px;
-	width:<dtml-var "_[courseImageRight].width">px;
-	float:right;
-	background-image:url(&dtml-portal_url;/&dtml-courseImageRight;);
-	background-repeat:no-repeat;
-	}
-
-
 
 /*NAVIGATION PORTLET STYLES*/
 

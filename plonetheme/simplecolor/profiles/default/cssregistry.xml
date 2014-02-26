@@ -22,6 +22,13 @@
     enabled="1" expression=""/>
     
 <stylesheet title=""
+    id="banners.css"
+    media=""
+    rel="stylesheet" rendering="inline"
+    cacheable="True" compression="safe" cookable="True"
+    enabled="1" expression=""/>
+    
+<stylesheet title=""
     id="jst010styles.css"
     media=""
     rel="stylesheet" rendering="link"
