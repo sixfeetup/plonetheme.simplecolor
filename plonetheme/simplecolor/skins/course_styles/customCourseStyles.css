@@ -1,0 +1,67 @@
+/**********aplng802********************/ 
+/*CONSONANT TABLE STYLES LES10*/
+.navroot-aplng.navroot-802 #consonantTable{border-collapse:collapse;font-size:1.3em;font-weight:bold;border:2px solid #000;}
+.navroot-aplng.navroot-802 #consonantTable td{text-align:center;padding:8px;border:1px solid #E3E3E3;}
+.navroot-aplng.navroot-802 .col1 {background-color:#F5FEF2;}
+.navroot-aplng.navroot-802 .row1{background-color:#F3F0D8;}
+.navroot-aplng.navroot-802 .vowelcharts{width:800px;margin:0 auto;}
+.navroot-aplng.navroot-802 .voiced{text-align:left;margin-left:5px;font-weight:normal;font-style:italic;}
+.navroot-aplng.navroot-802 .manner{text-align:left;}
+
+/**********aplng808********************/ 
+.navroot-aplng.navroot-808 .green{color:#009933;}
+.navroot-aplng.navroot-808 .red{color:#FF0000;}
+.navroot-aplng.navroot-808 .blue{color:#000099;}
+
+/**********asia100********************/  
+/*change from default*/
+.navroot-asia.navroot-100 ul,
+.navroot-asia.navroot-100 ol{list-style-position:inside;}
+
+/**********cmlit108********************/ 
+.navroot-cmlit.navroot-108 ul,
+.navroot-cmlit.navroot-108 ol{list-style-position:inside;}
+	
+/**********econ106********************/	
+.navroot-econ.navroot-106 .imageCenter{clear:both;margin:auto;text-align:center;background-color:#DEE7EC;color:#000099;font-size:.9em;border:none;}
+.navroot-econ.navroot-106 .equation1{font-size:1.2em;}
+.navroot-econ.navroot-106 .equation2{font-size:2em;}
+
+/**********econ304********************/
+.navroot-econ.navroot-304 #econtable-toprow{background-color:#3366CC;color:#fff;}
+.navroot-econ.navroot-304 .econtable-grayrow{background-color:#E6E6E6;}
+.navroot-econ.navroot-304 #econtable caption{font-size:1.2em;font-weight:600;}
+.navroot-econ.navroot-304 #econtable{width:100%;border:solid 2px;border-collapse:collapse;}
+.navroot-econ.navroot-304 #econtable td,
+.navroot-econ.navroot-304 #econtable th{text-align:left;padding:6px;}
+
+/**********econ306********************/
+.navroot-econ.navroot-306 .equation1{font-size:1.2em;}
+.navroot-econ.navroot-306 .equation2{font-size:2em;}
+.navroot-econ.navroot-306 .consoletype{font-family:"Lucida Console", Monaco, monospace;}
+
+/**********engl192********************/
+.navroot-engl.navroot-192 #courseimageright{float:left;margin-left:-225px;margin-top:37px;}
+/*SPECIAL STYLES FOR GOBLIN SPEAKS PAGES DISPLYED IN ANGEL */
+.navroot-engl.navroot-192 .section-goblinspeaks #portal-top{display:none;}
+.navroot-engl.navroot-192 .section-goblinspeaks #portal-footer{display:none;}
+.navroot-engl.navroot-192 .section-goblinspeaks .documentActions{display:none;}
+.navroot-engl.navroot-192 .section-goblinspeaks #visual-portal-wrapper{margin:0;}
+
+/**********phil014********************/
+/*TEXT EDITOR STYLES FOR THIS COURSE*/
+.navroot-phil.navroot-014 .asterikbox{float:right;width:265px;background-color:#FFFFCC;background-image:url(asterik.gif);background-repeat:no-repeat;padding:6px 10px 10px 25px;}
+.navroot-phil.navroot-014 .asterikinline{background-color:#FFFFCC; background-image:url(asterik3.gif);background-repeat:no-repeat;}
+.navroot-phil.navroot-014 .imageRight{background:#CFDED4;color:#243C55;margin-left:5px;}
+.navroot-phil.navroot-014 .imageLeft{background:#CFDED4;color:#47829D;}
+.navroot-phil.navroot-014 .beigebox{border:1px solid #867A68;clear:both;}
+
+/**********phil119********************/
+.navroot-phil.navroot-119 .twoMovies{min-width:850px;}
+  
+/**********wmnst106********************/
+/*TITLE BACKGROUND COLORS*/
+.navroot-wmnst.navroot-106 #historical-framework{background-color:#7499BC;margin:-23px -23px 5px -23px;padding:8px 8px 8px 23px;}
+.navroot-wmnst.navroot-106 #artists{background-color:#61A4AE;margin:-23px -23px 5px -23px;padding:8px 8px 8px 23px;}
+.navroot-wmnst.navroot-106 #art-in-context{background-color:#C7BDBB;margin:-23px -23px 5px -23px;padding:8px 8px 8px 23px;}
+.navroot-wmnst.navroot-106 #herstory{background-color:#EF8263;margin:-23px -23px 5px -23px;padding:8px 8px 8px 23px;}

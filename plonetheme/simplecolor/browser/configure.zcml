@@ -54,6 +54,15 @@
     	layer=".interfaces.IThemeSpecific"
     	permission="zope2.View"
     	/> 
+
+    <browser:page
+        name="plone_layout"
+        for="*"
+        permission="zope.Public"
+        class=".layoutpolicy.LayoutPolicy"
+        allowed_interface="plone.app.layout.globals.interfaces.ILayoutPolicy"
+        layer=".interfaces.IThemeSpecific"
+        />
     	
      <!--CUSTOMIZATION FOR NAVIGATION PORTLET-->
     <include package="plone.app.portlets" />

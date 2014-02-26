@@ -4,8 +4,8 @@
 
  <!--
      To register a file only for a specific child site, add this as the expression
-     with the appropriate child site ID:
-     python:context.restrictedTraverse('@@course_site').id() == 'employment-relations'
+     with the appropriate course number:
+     python:context.restrictedTraverse('@@course_site').number == 'JST 010'
  -->
 
 <stylesheet title=""
@@ -20,5 +20,21 @@
     rel="stylesheet" rendering="link"
     cacheable="True" compression="safe" cookable="True"
     enabled="1" expression=""/>
+    
+<stylesheet title=""
+    id="jst010styles.css"
+    media=""
+    rel="stylesheet" rendering="link"
+    cacheable="True" compression="safe" cookable="True"
+    enabled="1"
+    expression="python:context.restrictedTraverse('@@course_site').number == 'JST 010'"/>
+    
+<stylesheet title=""
+    id="jst060styles.css"
+    media=""
+    rel="stylesheet" rendering="link"
+    cacheable="True" compression="safe" cookable="True"
+    enabled="1"
+    expression="python:context.restrictedTraverse('@@course_site').number == 'JST 060'"/>
 
 </object>
