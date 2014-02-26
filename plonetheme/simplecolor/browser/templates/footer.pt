@@ -1,7 +1,7 @@
 <div id="portal-footer" metal:define-macro="portal_footer" i18n:domain="plone">
-<span tal:condition="context/course_author|nothing">
+<span tal:condition="context/course_site/author|nothing">
 Course Author:
-<span tal:content="context/course_author"></span><br />
+<span tal:content="context/course_site/author"></span><br />
 </span>
 <a href="http://www.psu.edu" target="_blank">Penn State University</a> &nbsp; | &nbsp;<a href="http://www.psu.edu/ur/legal.html" title="Official statements on privacy, nondiscrimination, equal opportunity and copyright.">Privacy and Legal Statements</a><br/>
 <a href="http://www.la.psu.edu/" target="_blank">The College of the Liberal Arts</a>
