@@ -1,10 +1,10 @@
 <tal:root define="navroot context/@@plone_portal_state/navigation_root_url">
     
-#courseimagetile{
+#courseimagetile {
     background-image:url(<tal:path replace="navroot"/>/courseimagetile.jpg);
 	background-repeat:x-repeat;
     clear: both;
-    height: 120px;
+    height: 0;
     margin-left:-2%;
     margin-right:-2%;
     margin-top: 0;
@@ -18,15 +18,15 @@
 #courseimageleft {
 	background: url(<tal:path replace="navroot"/>/courseimageleft.jpg) no-repeat left top;
 	position: absolute;
-    height: 120px;
+    height: 100%;
     width: 100%;
-	}
+}
 
 #courseimageright {
 	background: url(<tal:path replace="navroot"/>/courseimageright.gif) no-repeat right top;
 	position: absolute;
-    height: 120px;
+    height: 100%;
     width: 100%;
-	}
+}
 
 </tal:root>

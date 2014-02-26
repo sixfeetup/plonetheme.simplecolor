@@ -3,4 +3,5 @@
 <object name="portal_javascripts">
   <javascript id="jQueryScripts.js" remove="True"/>
   <javascript id="ezpz_tooltip.js" remove="True"/>
+  <javascript id="banners.js" remove="True"/>
 </object>

@@ -1,0 +1,11 @@
+<tal:define define="navroot context/@@plone_portal_state/navigation_root_url;
+                    image string:${navroot}/courseimagetile.jpg">
+                  
+    (function($) { $(function() {
+        var imgURL = "<tal:img replace="image" />";
+        $('<img src="'+imgURL+'"/>').load(function(){
+            $("#courseimagetile").css("height",this.height);
+        });
+    }); })(jQuery);
+    
+</tal:define>

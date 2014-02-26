@@ -3,7 +3,9 @@
 <object name="portal_css">
         
  <stylesheet title="" id="mediaqueries.css" remove="True" />
- 
- <stylesheet title="" id="simplecolor.css.dtml" remove="True" />    
+ <stylesheet title="" id="simplecolor.css" remove="True" /> 
+ <stylesheet title="" id="banners.css" remove="True" />
+ <stylesheet title="" id="jst010styles.css" remove="True" />
+ <stylesheet title="" id="jst060styles.css" remove="True" />
 
 </object>
