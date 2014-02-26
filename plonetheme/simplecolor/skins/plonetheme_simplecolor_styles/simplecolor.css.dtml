@@ -3,8 +3,7 @@
 
 /*SIMPLECOLOR THEME STYLES*/
 body{
-    background-image:url("bg-paper2.jpg");
- background-color:#F5F5EC;
+     background-color:#F5F5EC;
    }
 
 #visual-portal-wrapper{
@@ -172,6 +171,18 @@ body{
 #viewlet-below-content{
 	margin:5px;
 	}
+
+#kss-spinner {
+    background-position: center center;
+    display: none;
+    height: 20px;
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -10px;
+    position: fixed;
+    top: 50%;
+    width: 20px;
+}
 
 #courseimagetile{
     height:<dtml-var "_[courseImageTile].height">px;
