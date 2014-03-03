@@ -101,6 +101,10 @@ body{
     display:none;
 }
 
+.portaltype-coursetitle #document-action-printall{
+	display:none;
+}
+
 .portaltype-lessontitle #portal-breadcrumbs{
     display:none;
 }
