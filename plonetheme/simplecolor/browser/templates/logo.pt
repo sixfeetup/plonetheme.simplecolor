@@ -12,7 +12,7 @@
          tal:condition="context/course_site/is_course_site">
        <a tal:attributes="href string:${context/course_site/nav_root_url}" title="Course Home page.">
          <h1 tal:content="context/course_site/title">[course title property]</h1></a>
-         <h2 tal:content="context/course_site/number">[course number property]</h2>
+         <h2 tal:content="context/course_site/course_number">[course number property]</h2>
     </div>
 
 </div>
