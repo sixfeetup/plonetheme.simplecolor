@@ -175,6 +175,11 @@
         <div id="kss-spinner">
             <img tal:attributes="src string:${portal_url}/spinner.gif" alt="Spinning icon indicates page loading." />
         </div>
+        <script type="text/javascript"
+                src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+                tal:define="course_site context/@@course_site"
+                tal:condition="course_site/show_mathjax">
+        </script>
     </div>
 
 </div>
