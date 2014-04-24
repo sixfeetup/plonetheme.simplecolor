@@ -18,7 +18,7 @@ $(window).load(function(){
        );
 
 
-//*********** SHOW/HIDE QUESTION/ANSWER DIVS ******** 
+//*********** QUESTION/ANSWER SHOW/HIDE DIVS ******** 
 //HIDE ANSWER DIVS
 		//$(".answer").hide();
 		$(".answer").css({"position":"absolute","left":"-9999px"});
@@ -67,6 +67,60 @@ $(window).load(function(){
 		i++;
 	});
 	
+
+
+//*********** READMORE SHOW/HIDE DIVS ******** 
+//HIDE readmore DIVS
+		$(".readmore").css({"position":"absolute","left":"-9999px"});
+			
+//FIND ALL .readmore CLASS DIVS- ASSIGN ID #
+		i=1;
+		$(".readmore").each(function(){
+			var thisID="readmore" + i;
+		        $(this).attr("id",thisID);
+				i++;		            
+		        });
+
+		
+//FIND ALL .readmorestart CLASS DIVS- ASSIGN ID #
+		i=1;
+		$(".readmorestart").each(function(){
+			var thisID="readmorestart" + i;
+			var readmorelink="<div class='readmorelink' id='" + thisID + "'>READ MORE...</div>";
+			$(this).append(readmorelink); 
+			i++;		            
+			});
+			
+
+//ADD SHOW/HIDE TOGGLE FUNCTION OF EACH readmore DIV TO EACH CORRESPONDING readmorestart DIV		
+	i=1;
+	$(".readmorestart").each(function(){
+		
+		$("#readmorestart" + i).toggle(
+			function(elementID){
+				return function(){
+					$("#readmore" + elementID).css({"position":"relative","left":"0"});
+					
+					$("#readmorestart" + elementID ).html('HIDE');
+					
+				};
+			}(i), 
+			function(elementID) {
+				return function(){
+					$("#readmore" + elementID).css({"position":"absolute","left":"-9999px"});
+					
+					$("#readmorestart" + elementID).html('READ MORE..');
+					
+				};
+		}(i)
+		);		
+		i++;
+	});
+
+
+
+
+
 	
 //************OVERLAYS*******************
 $('.linkOverlay a')
@@ -187,6 +241,7 @@ $('.linkOverlay a')
 
 //HIDE tooltip-content DIVS
 			$(".tooltip-content").hide();
+			$(".tooltip-content").css('position','absolute');
 
 //FIND ALL .tooltipTarget CLASS DIVS- ASSIGN ID #
 		i=1;

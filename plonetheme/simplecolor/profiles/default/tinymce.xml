@@ -30,6 +30,11 @@
    <element value="question|div|question"/>
    <element value="answer|div|answer"/>
    <element value="DevelNotes|div|develnotes"/>
+   <element value="asterik|span|asterikinline"/>
+   <element value="asterikbox|div|asterikbox"/>
+   <element value="asterikboxright|div|asterikboxright"/>
+   <element value="readmorestart|div|readmorestart"/>
+   <element value="readmore|div|readmore"/>
   </styles>
  </layout>
 </object>
