@@ -641,9 +641,4 @@ h1, h2 {
     display:none;
 }
 
-/*HIDE LINEAGE DROPDOWN*/
-#lineageSelectionForm{
-    display:none;
-}
-	
 /* </dtml-with> */

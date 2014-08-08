@@ -42,6 +42,7 @@
 		<viewlet name="plone.site_actions"/>
 		<viewlet name="plone.personal_bar" />
 		<viewlet name="plone.global_sections" />
+		<viewlet name="collective.lineage.switcher" />
   </hidden>
   
   <!--Hide default path_bar above content-->
