@@ -35,7 +35,7 @@ $(window).load(function(){
 		i=1;
 		$(".question").each(function(){
 			var thisID="question" + i;
-			var imageDiv="<div class='showAnswer' id='" + thisID + "'><img src=" + "'checkAnswerBG.gif'</div>";
+			var imageDiv="<div class='showAnswer' id='" + thisID + "'><img src=" + "'checkAnswerBG.gif' alt='show or hide answer'></div>";
 			$(this).append(imageDiv); 
 			i++;		            
 			});
