@@ -641,4 +641,17 @@ h1, h2 {
     display:none;
 }
 
+/* libchat styles */
+div[id^='libchat_'] {
+    display: block;
+    position: fixed;
+    top: 20%;
+    right: 0;
+    height: 170px;
+    width: 36px;
+}
+div[id^='libchat_']:hover {
+    border: 6px solid #395773;
+} 
+
 /* </dtml-with> */
