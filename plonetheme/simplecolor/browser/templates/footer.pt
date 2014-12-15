@@ -5,12 +5,5 @@ Course Author:
 </span>
 <a href="http://www.psu.edu" target="_blank">Penn State University</a> &nbsp; | &nbsp;<a href="http://www.psu.edu/ur/legal.html" title="Official statements on privacy, nondiscrimination, equal opportunity and copyright.">Privacy and Legal Statements</a><br/>
 <a href="http://www.la.psu.edu/" target="_blank">The College of the Liberal Arts</a>
- 
-    <span i18n:translate="description_copyright" tal:omit-tag="">
-   
-    &copy; <span i18n:name="current_year"
-               tal:omit-tag=""
-               tal:define="now modules/DateTime/DateTime"
-               tal:content="now/year" /></span>
    
 </div>
