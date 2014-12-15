@@ -488,6 +488,11 @@ h1, h2 {
 #content .pullquote {
     font-size: 1.4em;
 }
+ /*hangingIndent style*/
+.hangingIndent{
+    padding-left:22px;
+    text-indent:-22px;
+} 
 
 /*ASTERIK BOX*/
 .asterikinline{

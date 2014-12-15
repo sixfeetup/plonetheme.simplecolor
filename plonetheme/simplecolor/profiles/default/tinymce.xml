@@ -35,6 +35,7 @@
    <element value="asterikboxright|div|asterikboxright"/>
    <element value="readmorestart|div|readmorestart"/>
    <element value="readmore|div|readmore"/>
+   <element value="Hanging Indent|div|hangingIndent"/>
   </styles>
  </layout>
 </object>
