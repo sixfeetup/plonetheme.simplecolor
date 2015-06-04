@@ -19,6 +19,7 @@ $(window).load(function(){
 
 
 //*********** QUESTION/ANSWER SHOW/HIDE DIVS ******** 
+if ($(".answer").length > 0) {
 //HIDE ANSWER DIVS
 		//$(".answer").hide();
 		$(".answer").css({"position":"absolute","left":"-9999px"});
@@ -63,9 +64,11 @@ $(window).load(function(){
 		i++;
 	});
 	
+}//close if .answer conditional
 
 
 //*********** READMORE SHOW/HIDE DIVS ******** 
+if ($(".readmore").length > 0) {
 //HIDE readmore DIVS
 		$(".readmore").css({"position":"absolute","left":"-9999px"});
 			
@@ -109,9 +112,11 @@ $(window).load(function(){
 		);		
 		i++;
 	});
+}//close if .readmore conditional
 
 
 //*********** SHOWHIDDEN/HIDDENTEXT DIVS ******** 
+if ($(".hiddenText").length > 0) {
 //HIDE .hiddenText DIVS
 		$(".hiddenText").css({"position":"absolute","left":"-9999px"});
 			
@@ -122,7 +127,6 @@ $(window).load(function(){
 		    $(this).attr("id",thisID);
 		    $(this).attr("class",thisClass);		            
 		});
-
 		
 //FIND ALL .showHidden CLASS DIVS- ASSIGN ID # & .hiddenSection CLASS
 		$(".showHidden").each(function(index){
@@ -154,7 +158,7 @@ $(window).load(function(){
 		i++;
 	});
 
-
+}//close if .hiddenText conditional
 
 	
 //************OVERLAYS*******************
