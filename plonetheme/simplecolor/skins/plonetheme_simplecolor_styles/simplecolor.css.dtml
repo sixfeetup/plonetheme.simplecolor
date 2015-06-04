@@ -549,6 +549,29 @@ h1, h2 {
    -moz-border-radius: 5px;
 }
 
+/*SHOWHIDDEN-HIDDENTEXT*/
+.showHidden{
+	cursor:pointer;
+	color:#205C90;
+	text-decoration:underline;
+	}
+	
+.mceContentBody .showHidden{
+   background-image:url(readmore.gif);
+}
+
+.mceContentBody .hiddenText{
+   background-image:url(readmore.gif);
+}
+	
+.hiddenText{
+padding:5px;
+border: 1px solid #E1E1E1;
+max-height:300px;
+max-width:2000px;
+overflow:scroll;
+}
+
 /* keep twitter feed box from flexing*/
 .portlet-static-twitter-portlet{
      width:180px;

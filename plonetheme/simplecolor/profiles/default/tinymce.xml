@@ -33,8 +33,8 @@
    <element value="asterik|span|asterikinline"/>
    <element value="asterikbox|div|asterikbox"/>
    <element value="asterikboxright|div|asterikboxright"/>
-   <element value="readmorestart|div|readmorestart"/>
-   <element value="readmore|div|readmore"/>
+   <element value="Show Hidden|div|showHidden"/>
+   <element value="Hidden Text|div|hiddenText"/>
    <element value="Hanging Indent|div|hangingIndent"/>
   </styles>
  </layout>
