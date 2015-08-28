@@ -32,40 +32,64 @@ if ($(".answer").length > 0) {
 		
 //FIND ALL .question CLASS DIVS- ASSIGN ID #
 		$(".question").each(function(index){
-			var thisID="question" + index;
-			var imageDiv="<div class='showAnswer' id='" + thisID + "'><img src=" + "'checkAnswerBG.gif' alt='show or hide answer'></div>";
+			var thisID="showAnswer" + index;
+			var imageDiv="<div class='showAnswer' id='" + thisID + "' data-click-state='0'><img src=" + "'checkAnswerBG.gif' alt='show or hide answer'></div>";
 			$(this).append(imageDiv); 		            
 			});
 			
 //ADD SHOW/HIDE TOGGLE FUNCTION OF EACH ANSWER DIV TO EACH CORRESPONDING QUESTION DIV		
 	i=0;
-	$(".question").each(function(){
+	$(".question").each(function(index){
 		
-		$("#question" + i).toggle(
-			function(elementID){
-				return function(){
-					//$("#answer" + elementID).show();
-					$("#answer" + elementID).css({"position":"relative","left":"0"});
-					
-					$("#question" + elementID + "> img").attr('src', 'hideAnswerBG.gif');
-					
-				};
-			}(i), 
-			function(elementID) {
-				return function(){
-					//$("#answer" + elementID).hide();
-					$("#answer" + elementID).css({"position":"absolute","left":"-9999px"});
-					
-					$("#question" + elementID + "> img").attr('src', 'checkAnswerBG.gif');
-					
-				};
-		}(i)
-		);		
-		i++;
+		$("#showAnswer" + index).click(function(){
+			if($(this).attr('data-click-state') == 0) {
+			  $(this).attr('data-click-state', 1)
+			  $("#answer" + index).css({"position":"relative","left":"0"});
+			  $("#showAnswer" + index + "> img").attr('src', 'hideAnswerBG.gif');				
+			}else{ 
+			  $(this).attr('data-click-state', 0)
+			  $("#answer" + index).css({"position":"absolute","left":"-9999px"});
+			  $("#showAnswer" + index + "> img").attr('src', 'checkAnswerBG.gif');				
+			}
+		});				
 	});
 	
 }//close if .answer conditional
 
+
+//*********** SHOW/HIDE HIDDENTEXT DIVS ********
+if ($(".hiddenText").length > 0) { 
+//HIDE hiddenText DIVS
+		$(".hiddenText").css({"position":"absolute","left":"-9999px"});
+			
+//FIND ALL .hiddenText CLASS DIVS- ASSIGN ID #
+		$(".hiddenText").each(function(index){
+			var thisID="hiddenText" + index;
+		        $(this).attr("id",thisID);		            
+		        });
+		
+//FIND ALL .showHidden CLASS DIVS- ASSIGN ID # & ATTRIBUTE, MAKE LINK
+		$(".showHidden").each(function(index){
+			$(this).attr('data-click-state',0);
+			var thisID="showHidden" + index;
+			var thisClass="showHidden";
+			$(this).replaceWith("<a class='" + thisClass + "' id='" + thisID + "' data-click-state='0'>" + $(this).text() + "</a>"); 		            
+			});
+
+//ADD SHOW/HIDE TOGGLE FUNCTION OF EACH hiddenText DIV TO EACH CORRESPONDING showHidden DIV
+  $(".showHidden").each(function(index){
+	$("#showHidden" + index).click(function(){
+		if($(this).attr('data-click-state') == 0) {
+		$(this).attr('data-click-state', 1)
+		$("#hiddenText" + index).css({"position":"relative","left":"0"});
+		} else {
+		$(this).attr('data-click-state', 0)
+		$("#hiddenText" + index).css({"position":"absolute","left":"-9999px"});
+		}	
+	});
+  });
+
+}//close if .hiddenText conditional
 
 //*********** READMORE SHOW/HIDE DIVS ******** 
 if ($(".readmore").length > 0) {
@@ -77,88 +101,32 @@ if ($(".readmore").length > 0) {
 			var thisID="readmore" + index;
 		        $(this).attr("id",thisID);		            
 		        });
-
 		
 //FIND ALL .readmorestart CLASS DIVS- ASSIGN ID #
 		$(".readmorestart").each(function(index){
-			var thisID="readmorestart" + index;
-			var readmorelink="<div class='readmorelink' id='" + thisID + "'>READ MORE...</div>";
-			$(this).append(readmorelink); 
-			i++;		            
+			var thisID="readmorelink" + index;
+			var readmorelink="<div class='readmorelink' id='" + thisID + "' data-click-state='0'>READ MORE...</div>";
+			$(this).append(readmorelink); 		            
 			});
 			
-
 //ADD SHOW/HIDE TOGGLE FUNCTION OF EACH readmore DIV TO EACH CORRESPONDING readmorestart DIV		
-	i=0;
-	$(".readmorestart").each(function(){
-		
-		$("#readmorestart" + i).toggle(
-			function(elementID){
-				return function(){
-					$("#readmore" + elementID).css({"position":"relative","left":"0"});
-					
-					$("#readmorestart" + elementID ).html('HIDE');
-					
-				};
-			}(i), 
-			function(elementID) {
-				return function(){
-					$("#readmore" + elementID).css({"position":"absolute","left":"-9999px"});
-					
-					$("#readmorestart" + elementID).html('READ MORE..');
-					
-				};
-		}(i)
-		);		
-		i++;
+	
+	$(".readmorelink").each(function(index){
+		$("#readmorelink" + index).click(function(){
+		if($(this).attr('data-click-state') == 0) {
+		  $(this).attr('data-click-state', 1)
+		  $("#readmore" + index).css({"position":"relative","left":"0"});
+		  $("#readmorelink" + index ).html('HIDE');
+		} else {
+	      $(this).attr('data-click-state', 0)
+		  $("#readmore" + index).css({"position":"absolute","left":"-9999px"});
+		  $("#readmorelink" + index).html('READ MORE..');
+		}	
+	  });
+	  
 	});
+				
 }//close if .readmore conditional
-
-
-//*********** SHOWHIDDEN/HIDDENTEXT DIVS ******** 
-if ($(".hiddenText").length > 0) {
-//HIDE .hiddenText DIVS
-		$(".hiddenText").css({"position":"absolute","left":"-9999px"});
-			
-//FIND ALL .hiddenText CLASS DIVS- ASSIGN ID # & .hiddenSection CLASS
-		$(".hiddenText").each(function(index){
-			var thisID="hiddenText" + index;
-			var thisClass="hiddenText hiddenSection" +index;
-		    $(this).attr("id",thisID);
-		    $(this).attr("class",thisClass);		            
-		});
-		
-//FIND ALL .showHidden CLASS DIVS- ASSIGN ID # & .hiddenSection CLASS
-		$(".showHidden").each(function(index){
-			var thisID="showHidden" + index;
-			var thisClass="showHidden hiddenSection" +index;			
-			$(this).replaceWith("<a class='" + thisClass + "' id='" + thisID + "'>" + $(this).text() + "</a>");
-			
-			//WRAP SECTION ELEMENT AROUND LINK AND HIDDEN TEXT
-			$( ".hiddenSection"+i).wrapAll( "<section class='hiddenSection'/>");
-					            
-		});
-			
-//ADD SHOW/HIDE TOGGLE FUNCTION OF EACH showHidden DIV TO EACH CORRESPONDING hiddenText DIV		
-	i=0;
-	$(".showHidden").each(function(){
-		
-		$("#showHidden" + i).toggle(
-			function(elementID){
-				return function(){
-					$("#hiddenText" + elementID).css({"position":"relative","left":"0"});
-				};
-			}(i), 
-			function(elementID) {
-				return function(){
-					$("#hiddenText" + elementID).css({"position":"absolute","left":"-9999px"});					
-				};
-		}(i)
-		);		
-		i++;
-	});
-
-}//close if .hiddenText conditional
 
 	
 //************OVERLAYS*******************
