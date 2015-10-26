@@ -17,7 +17,7 @@
 
                 <span i18n:translate="label_previous_item"
                       tal:omit-tag="">
-                  << Previous 
+                  &lt;&lt; Previous 
                   </span>  
             </a>
           </tal:previous>
@@ -29,7 +29,7 @@
                tal:attributes="href next/url">
                <span i18n:translate="label_next_item"
                      tal:omit-tag="">
-                 Next >>
+                 Next &gt;&gt;
                </span>  
 
             </a>
